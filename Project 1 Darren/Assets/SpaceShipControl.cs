@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpaceShipControl : MonoBehaviour
 {
+    public GameObject MissileClone;
     Vector3 velocity, acceleration;
     float rotationspeed = 180;
     // Start is called before the first frame update
@@ -44,6 +45,16 @@ public class SpaceShipControl : MonoBehaviour
         if ((Input.GetKey(KeyCode.D)))
         {
             transform.Rotate(new Vector3(0, 1, 0), rotationspeed * Time.deltaTime);
+        }
+
+         void firemissile()
+        {
+            Instantiate(MissileClone, transform.position, transform.rotation);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            firemissile();
         }
         velocity += acceleration * Time.deltaTime;
         transform.position += velocity * Time.deltaTime;
