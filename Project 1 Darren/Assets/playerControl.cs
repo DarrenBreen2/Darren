@@ -30,6 +30,11 @@ public class playerControl : MonoBehaviour
             transform.position += Vector3.right * Time.deltaTime;
         }
 
+        if (Input.GetKey(KeyCode.R))
+        {
+            Destroy(this.gameObject);
+        }
+
 
     }
 
@@ -50,7 +55,6 @@ public class playerControl : MonoBehaviour
         {
             print("I Win");
             Destroy(this.gameObject);
-            
         }
     }
 }
