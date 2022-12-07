@@ -43,7 +43,7 @@ public class playerControl : MonoBehaviour
         
         wallScript wallHit = collision.gameObject.GetComponent<wallScript>();
         endGoal goalHit = collision.gameObject.GetComponent<endGoal>();
-
+       
         if (wallHit)
         {
             print("I lose");
@@ -55,6 +55,7 @@ public class playerControl : MonoBehaviour
         {
             print("I Win");
             Destroy(this.gameObject);
+            screenChange.Instance.sceneTomoveTo();
         }
     }
 }
