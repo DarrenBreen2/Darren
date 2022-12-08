@@ -1,14 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerControl : MonoBehaviour
 {
+ 
+
+
     // Start is called before the first frame update
     void Start()
     {
-      
+          Scene currentScene = SceneManager.GetActiveScene ();
+
+        string sceneName = currentScene.name;
+        
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -43,7 +52,8 @@ public class playerControl : MonoBehaviour
         
         wallScript wallHit = collision.gameObject.GetComponent<wallScript>();
         endGoal goalHit = collision.gameObject.GetComponent<endGoal>();
-       
+        int i = 0;
+
         if (wallHit)
         {
             print("I lose");
@@ -55,8 +65,24 @@ public class playerControl : MonoBehaviour
         {
             print("I Win");
             Destroy(this.gameObject);
-            screenChange.Instance.sceneTomoveTo();
-            screen2to3.Instance.sceneTomoveTo();
+
+            if (i == 0)
+            {
+                screenChange.Instance.sceneTomoveTo();
+                i += 1;
+            }
+
+            if(i == 1)
+            {
+                screen2to3.Instance.sceneTomoveTo();
+                i += 1;
+            }
+
+            if (i == 2)
+            {
+                screen3to4.Instance.sceneTomoveTo();
+                i += 1;
+            }
         }
     }
 }
