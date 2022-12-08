@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 51403646}
   - component: {fileID: 51403645}
   - component: {fileID: 51403644}
+  - component: {fileID: 51403647}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -207,6 +208,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &51403647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51403643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8930ec3f4599c4d47bb745fe5fc54ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &138734671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1231,7 @@ GameObject:
   - component: {fileID: 1856395830}
   - component: {fileID: 1856395829}
   - component: {fileID: 1856395828}
-  - component: {fileID: 1856395827}
+  - component: {fileID: 1856395832}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -1226,18 +1239,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1856395827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856395826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cf7fdbc39badb740ad1004f4a8eea73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1856395828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1316,6 +1317,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856395832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856395826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf7fdbc39badb740ad1004f4a8eea73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1935027258
 GameObject:
   m_ObjectHideFlags: 0
