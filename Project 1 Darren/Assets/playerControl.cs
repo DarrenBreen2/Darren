@@ -66,25 +66,32 @@ public class playerControl : MonoBehaviour
             print("I Win");
             Destroy(this.gameObject);
 
+
             if (i == 0)
             {
                 screenChange.Instance.sceneTomoveTo();
                 i += 1;
             }
 
-            if(i == 1)
+            if (i == 1)
+            {
+                screenChange.Instance.sceneTomoveTo();
+                i += 1;
+            }
+
+            if(i == 2)
             {
                 screen2to3.Instance.sceneTomoveTo();
                 i += 1;
             }
 
-            if (i == 2)
+            if (i == 3)
             {
                 screen3to4.Instance.sceneTomoveTo();
                 i += 1;
             }
 
-            if (i == 3)
+            if (i == 4)
             {
                 endScreen.Instance.sceneTomoveTo();
                 i += 1;
