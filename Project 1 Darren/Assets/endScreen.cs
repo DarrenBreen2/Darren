@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class screen4toend : MonoBehaviour
+public class endScreen : MonoBehaviour
 {
 
-    public static screen4toend Instance;
+    public static endScreen Instance;
 
 
     private void Awake()
@@ -15,6 +15,12 @@ public class screen4toend : MonoBehaviour
     }
     // Start is called before the first frame update
     void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
     {
 
     }

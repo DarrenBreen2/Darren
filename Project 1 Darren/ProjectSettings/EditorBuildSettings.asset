@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameProject4.unity
     guid: 252828b3bf9c1184daaf2f3480d264dc
+  - enabled: 1
+    path: Assets/GameProject5.unity
+    guid: b1461d98e43be1b409346eccf178cf8c
   m_configObjects: {}

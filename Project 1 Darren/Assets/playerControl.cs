@@ -83,6 +83,12 @@ public class playerControl : MonoBehaviour
                 screen3to4.Instance.sceneTomoveTo();
                 i += 1;
             }
+
+            if (i == 3)
+            {
+                endScreen.Instance.sceneTomoveTo();
+                i += 1;
+            }
         }
     }
 }
